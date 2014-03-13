@@ -1,0 +1,21 @@
+package Sample3
+import BonusHandler
+
+unit hero
+
+function resetProperties()
+	hero.setMana(0)
+	hero.setHP(100)
+
+init
+	CreateTrigger()
+		..registerPlayerEvent(Player(0), EVENT_PLAYER_END_CINEMATIC)
+		..addAction(function resetProperties)
+	CreateTrigger()
+		..registerTimerEvent(1., false)
+		..addAction(() -> begin
+			hero = createUnit(Player(0), 'H000', vec2(0., 0.), angle(0.))
+			setUnitBonus(hero, Bonus.LIFEREGEN, 1)
+			setUnitBonus(hero, Bonus.MANAREGEN, 1000)
+	end)
+	

@@ -1,0 +1,52 @@
+//package Sample
+//import BonusHandler
+//import TimerUtils
+//
+//public unit u
+//
+//function cb()
+//	Bonus b = Bonus.DAMAGE
+//	string s = ""
+//	switch GetRandomInt(1, 9)
+//		case 1
+//			b = Bonus.DAMAGE
+//			s = "Damage"
+//		case 2
+//			b = Bonus.ARMOR
+//			s = "Armor"
+//		case 3
+//			b = Bonus.SIGHTRANGE
+//			s = "Sightrange"
+//		case 4
+//			b = Bonus.MANAREGEN
+//			s = "Manaregen"
+//		case 5
+//			b = Bonus.ATTACKSPEED
+//			s = "Attackspeed"
+//		case 6
+//			b = Bonus.STRENGTH
+//			s = "Strength"
+//		case 7
+//			b = Bonus.AGILITY
+//			s = "Agility"
+//		case 8
+//			b = Bonus.INTELLIGENCE
+//			s = "Intelligence"
+//	let val = GetRandomInt(getMinBonus(b), getMaxBonus(b))
+//	setUnitBonus(u, b, val)
+//	print("Applied bonus of type (" + s + ") with value " + val.toString())
+//
+//function clearBonuses()
+//	clearAllUnitBonuses(u)
+//
+//init
+//	print("Type -clear to remove all bonuses from the Paladin!")
+//	u = CreateUnit(Player(0), 'Hpal', 0., 0., 0.)
+//	getTimer().startPeriodic(5, function cb)
+//	CreateTrigger()
+//		..registerPlayerChatEvent(Player(0), "-clear", true)
+//		..addAction(function clearBonuses)
+//	
+//
+//
+//

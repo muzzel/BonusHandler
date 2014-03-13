@@ -1,0 +1,36 @@
+//package Sample2
+//import Sample
+//import BonusHandler
+//
+//function am()
+//	u.addAbility('S002')
+//	print("ASD" + u.getName())
+//	
+//function pal()
+//	u.addAbility('S000')
+//	print("FOO" + u.getName())
+//	
+//function addhp()
+//	setUnitBonus(u, Bonus.LIFE, 100)
+//	setUnitBonus(u, Bonus.MANA, 50)
+//	
+//function remhp()
+//	setUnitBonus(u, Bonus.LIFE, 0)
+//	setUnitBonus(u, Bonus.MANA, 0)
+//
+//init
+//	print("Type -am to morph the Paladin into an Archmage!")
+//	print("Type -pal to morph the Archmage into a Paladin!")
+//	CreateTrigger()
+//		..registerPlayerChatEvent(Player(0), "-am", true)
+//		..addAction(function am)
+//	CreateTrigger()
+//		..registerPlayerChatEvent(Player(0), "-pal", true)
+//		..addAction(function pal)
+//	CreateTrigger()
+//		..registerPlayerChatEvent(Player(0), "-addhp", true)
+//		..addAction(function addhp)
+//	CreateTrigger()
+//		..registerPlayerChatEvent(Player(0), "-remhp", true)
+//		..addAction(function remhp)
+//
